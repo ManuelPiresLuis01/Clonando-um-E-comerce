@@ -1,0 +1,345 @@
+/*estilo geral*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgb(54, 54, 54);
+}
+
+button {
+    background-color: #ff523b;
+    border: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 18px;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: #5c170e;
+
+
+}
+
+/*estilizando o cabeçalho desktop*/
+.header {
+    margin-top: -5px;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    align-items: center;
+    max-width: 1300px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+ul li {
+    margin-right: 30px;
+}
+
+ul li img {
+    width: 40px;
+}
+
+/*Estilo do principal*/
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 70px;
+    margin-left: 60px;
+}
+
+.colu-1 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.colu-1 h1 {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.colu-1 a {
+    color: white;
+}
+
+.colu-1 img {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.back-ground {
+    padding: 15px;
+    background: radial-gradient(#fff, #ffd6d6);
+}
+
+/****EXEMPLOS*****/
+.flex1 {
+    display: flex;
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+
+}
+
+.flex1 img {
+    width: 300px;
+    margin-left: 20px;
+
+}
+
+/*Zona dos features*/
+
+.titulo {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 200px;
+    position: relative;
+    line-height: 60px;
+}
+
+.titulo::after {
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.flex2 {
+    display: flex;
+    margin-left: 150px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+
+}
+
+.flex2 img {
+    margin-top: -150px;
+    width: 250px;
+    margin-left: 20px;
+    transition: .5s;
+
+}
+
+h6,
+p {
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+.flex2 img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/*Exclusivo*/
+.exclusivo {
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+
+}
+
+.exclusivo img {
+    width: 500px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+.exclusivo .txt p {
+    font-size: 12px;
+}
+
+/*usei o mesmo background do header*/
+
+
+/*testemunhas*/
+.testemunhas {
+    display: flex;
+    margin-left: 180px;
+    margin-bottom: 150px;
+}
+
+.test {
+    position: relative;
+    margin-right: 30px;
+    padding: 10px;
+    margin-top: 80px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+
+.test:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.test p {
+    font-size: 12px;
+}
+
+.test img {
+    width: 50px;
+    border-radius: 30px;
+
+}
+
+/*Estilo das marcas*/
+.flex3 {
+    display: flex;
+    margin-left: 150px;
+    margin-bottom: 150px;
+}
+
+.marcas {
+    margin-left: 20px;
+}
+
+.marcas img {
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.marcas img:hover {
+    filter: grayscale(0%);
+}
+
+/*Footer*/
+.footer {
+    display: flex;
+    color: rgb(167, 167, 167);
+    padding: 50px;
+}
+
+.footer p {
+    font-size: 11px;
+}
+
+.back {
+    position: relative;
+    background: black;
+}
+
+.footer a {
+    color: rgb(167, 167, 167);
+}
+
+.footer a:hover {
+    color: rgb(240, 240, 240);
+}
+
+.footer img {
+    width: 150px;
+}
+
+.footer1,
+.footer2,
+.footer3,
+.footer4 {
+    margin-right: 100px;
+}
+
+.centro {
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+.branco {
+    color: white;
+    font-weight: bold;
+}
+
+.footer h4 {
+    font-size: 20px;
+}
+
+.footer a {
+    font-size: 15px;
+}
+
+.footer p {
+    color: white;
+}
+
+.fotos {
+    display: flex;
+}
+
+
+/*responsividade*/
+
+@media only screen and (max-width: 900px) {
+    .menu-desktop {
+        display: none;
+    }
+
+    .flex,
+    .flex1,
+    .flex3 {
+        flex-wrap: wrap;
+    }
+
+    .flex1,
+    .flex2 {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .flex2 img {
+        margin-top: 0.5px;
+    }
+
+    .flex button {
+        margin-left: 60px;
+    }
+
+    .exclusivo img {
+        margin-left: -10px;
+    }
+
+    .exclusivo {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .testemunhas {
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+
+    .footer1,
+    .footer2,
+    .footer3,
+    .footer4 {
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
