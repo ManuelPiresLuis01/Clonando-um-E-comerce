@@ -6,6 +6,11 @@
     border: none;
 }
 
+header {
+    margin-top: 50px;
+
+}
+
 ul li a {
     text-decoration: none;
     color: #555;
@@ -41,7 +46,7 @@ h4::after {
 /*estilo do cabeçalho*/
 
 .header {
-    position: fixed ;
+    position: fixed;
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -215,12 +220,46 @@ h4::after {
     display: none;
 }
 
-.menu-mobile {  
-  display:none;
+.menu-mobile {
+    display: none;
 }
+
 /*Responsividade*/
 .header-mobile {
     display: none;
+}
+
+
+/*fim do estilo da home*/
+
+
+
+/*estilo do produtos*/
+
+select {
+    border: 1px solid #ff523b;
+    padding: 5px;
+    outline: none;
+}
+
+.pages {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    margin-left:  35px;;
+    display: flex;
+}
+
+.page {
+    margin-left: 15px;
+    border: 1px solid #ff523b;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.page:hover {
+    color: white;
+    background: #ff523b;
 }
 
 /*Responsividade*/
@@ -229,22 +268,23 @@ h4::after {
     .header {
         display: none;
     }
-    .menu-icon {  
-        display:block;
-      }
+
+    .menu-icon {
+        display: block;
+    }
 
     .header-mobile {
-        
+
         position: fixed;
         align-items: center;
         display: flex;
         justify-content: space-between;
         z-index: 99998;
         width: 90%;
-        
+
     }
 
-   
+
     .menu-mobile {
         display: block;
         position: fixed;
