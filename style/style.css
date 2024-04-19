@@ -39,7 +39,10 @@ h4::after {
 }
 
 /*estilo do cabeçalho*/
+
 .header {
+    position: fixed ;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -231,18 +234,17 @@ h4::after {
       }
 
     .header-mobile {
+        
         position: fixed;
         align-items: center;
         display: flex;
-        margin-left: 10px;
-        margin-right: 10px;
+        justify-content: space-between;
         z-index: 99998;
+        width: 90%;
+        
     }
 
-    .logo img {
-        margin-right:150px;
-    }
-
+   
     .menu-mobile {
         display: block;
         position: fixed;
